@@ -1,4 +1,4 @@
-package main.java;
+package main.java.prelesson;
 
 public class Earth {
     public static void main(String args[]){
