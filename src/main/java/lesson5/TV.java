@@ -10,9 +10,4 @@ public class TV implements Device {
     public void turnOff() {
         System.out.println("turn off the TV.");
     }
-
-    @Override
-    public void connectToController() {
-        System.out.println("TV has been connected to remote controller.");
-    }
 }

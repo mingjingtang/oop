@@ -10,9 +10,4 @@ public class Projector implements Device {
     public void turnOff() {
         System.out.println("turn off the projector.");
     }
-
-    @Override
-    public void connectToController() {
-        System.out.println("projector has been connect to remote controller.");
-    }
 }

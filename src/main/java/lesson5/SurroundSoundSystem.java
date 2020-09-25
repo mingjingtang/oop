@@ -10,9 +10,4 @@ public class SurroundSoundSystem implements Device {
     public void turnOff() {
         System.out.println("turn off the surroundSoundSystem.");
     }
-
-    @Override
-    public void connectToController() {
-        System.out.println("surroundSoundSystem has been connected to Remote Controller.");
-    }
 }

@@ -1,7 +1,7 @@
 package main.java.lesson5;
 
 public class RemoteControl {
-    private static final RemoteControl controller = new RemoteControl();
+    private static final RemoteControl CONTROLLER = new RemoteControl();
     private Device curDevice;
 
     private RemoteControl(){
@@ -9,7 +9,12 @@ public class RemoteControl {
     };
 
     public static RemoteControl getController(){
-       return controller;
+       return CONTROLLER;
+    }
+
+    public void connectToDevice(Device device){
+        this.curDevice = device;
+        System.out.println("controller have been connected to the " + device);
     }
 
     public void turnOnDevice(Device curDevice){
