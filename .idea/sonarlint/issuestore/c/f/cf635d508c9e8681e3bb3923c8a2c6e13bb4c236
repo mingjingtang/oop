@@ -1,9 +1,9 @@
 
 T	java:S106"9Replace this use of System.out or System.err by a logger.(Œ¦á$8ó÷¹¡Ë.
->
-java:S1116	"Remove this empty statement.(ôŸìúÿÿÿÿ8˜ä¨ Ë.
+z
+java:S1450"XRemove the "curDevice" field and declare it as a local variable in the relevant methods.(‰Û±¿øÿÿÿÿ8íÊÌ.
 U	java:S106"9Replace this use of System.out or System.err by a logger.(©ÑáÏ8²ŒÊÌ.
 O
 java:S1068"-Remove this unused "curDevice" private field.(‰Û±¿øÿÿÿÿ8‡ò·¡Ë.
-z
-java:S1450"XRemove the "curDevice" field and declare it as a local variable in the relevant methods.(‰Û±¿øÿÿÿÿ8íÊÌ.
+>
+java:S1116	"Remove this empty statement.(ôŸìúÿÿÿÿ8˜ä¨ Ë.
