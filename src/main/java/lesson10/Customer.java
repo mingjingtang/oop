@@ -2,23 +2,26 @@ package main.java.lesson10;
 
 public class Customer implements WaitingCustomer {
     private String name;
-    public String drinkOrdered;
+    private String drinkOrdered;
 
-    @Override
-    public boolean orderReady(String preparedDrink) {
-        this.drinkOrdered = preparedDrink;
-        return true;
-    }
-
-    public void setDrinkOrdered(String drinkOrdered) {
+    public Customer(String name, String drinkOrdered){
+        this.name = name;
         this.drinkOrdered = drinkOrdered;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getName() {
+        return name;
     }
 
     public String getDrinkOrdered() {
         return drinkOrdered;
+    }
+
+    @Override
+    public void orderReady(String completedDrink) {
+       if(drinkOrdered.equals(completedDrink)){
+           System.out.println(name + ": Thank you, I've recieved my "
+                   + drinkOrdered + " and leaving the store now...");
+       }
     }
 }

@@ -7,21 +7,17 @@ public class CoffeeShop {
     public static void main(String[] args) {
         CoffeeAttendent ca = new CoffeeAttendent();
 
-        Customer jane = new Customer();
-        jane.setDrinkOrdered("matcha");
-        jane.setName("jane");
-
-        Customer michael = new Customer();
-        michael.setDrinkOrdered("cold brew");
-        michael.setName("michael");
-
+        Customer jane = new Customer("jane", "matcha");
+        Customer michael = new Customer("michael", "cold brew");
 
         ca.takeOrder(jane);
-        ca.prepareDrink(jane.getDrinkOrdered());
-        ca.callOutCompletedOrder();
-
         ca.takeOrder(michael);
-        ca.prepareDrink(michael.getDrinkOrdered());
+
+        //prepare drink
+        ca.prepareDrink("matcha");
+        ca.prepareDrink("cold brew");
+
+        //order up
         ca.callOutCompletedOrder();
     }
 }
